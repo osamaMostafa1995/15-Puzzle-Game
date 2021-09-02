@@ -1,13 +1,61 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.Board {
+  margin: 5px 0px;
+  grid-template-columns: auto auto auto auto;
+  display: grid;
+  position: relative;
+  padding: 15px;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  width: 500px;
+  height: 500px;
+}
+
+.BoardSqr {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.tile {
+  display: flex;
+  border-radius: 10px;
+  background: rgb(232, 138, 69);
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 75px;
+  width: 100px;
+  height: 100px;
+}
+.Empty {
+  display: none;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
 }
